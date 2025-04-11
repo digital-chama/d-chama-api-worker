@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/d-chama-api-worker.props" />
+</Project>

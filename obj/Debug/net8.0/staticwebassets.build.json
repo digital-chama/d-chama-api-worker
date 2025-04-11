@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "j6WiISjnR3lV2ADRFMETjhnRmIE3b8EfwBjSsF1fVQA=",
+  "Source": "d-chama-api-worker",
+  "BasePath": "_content/d-chama-api-worker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
