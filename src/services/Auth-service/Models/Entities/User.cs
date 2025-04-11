@@ -1,0 +1,5 @@
+
+
+namespace Authentication.Models.Entities
+{
+    }
