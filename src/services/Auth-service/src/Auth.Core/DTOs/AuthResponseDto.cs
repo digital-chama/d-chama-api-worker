@@ -1,0 +1,1 @@
+//auth response dto with token and user

@@ -1,0 +1,1 @@
+//event when the user is verified, this event is published to the service bus

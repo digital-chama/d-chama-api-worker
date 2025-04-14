@@ -1,0 +1,1 @@
+//when the user is created, this event is published to the service bus

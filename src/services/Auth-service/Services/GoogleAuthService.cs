@@ -1,6 +1,0 @@
-
-
-namespace Authentication.Services.GoogleOauth
-{
-    
-}
