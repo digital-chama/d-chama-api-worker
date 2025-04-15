@@ -1,36 +1,37 @@
 
+
 {
-    "name": "cmg-azcontreg-worker",
-    "dockerFile": "Dockerfile.dev",
-    "customizations": {
-      "vscode": {
-        "settings": {
-          "terminal.integrated.shell.linux": "/bin/bash"
-        },
-        "extensions": [
-            "ms-dotnettools.csharp",
-            "ms-azuretools.vscode-docker",
-            "eamodio.gitlens",
-            "GitHub.copilot",
-            "ms-dotnettools.csdevkit",
-            "ms-dotnettools.csharp-extensions",
-            "ms-dotnettools.blazor",
-            "ms-dotnettools.csharp-devkit",
-            "ms-dotnettools.csharp-interactive",
-            "ms-dotnettools.csharp-formatter"
-        ]
-      }
-    },
+  "name": "cmg-azcontreg-worker",
+  "dockerFile": "Dockerfile.dev",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+          "ms-dotnettools.csharp",
+          "ms-azuretools.vscode-docker",
+          "eamodio.gitlens",
+          "GitHub.copilot",
+          "ms-dotnettools.csdevkit",
+          "ms-dotnettools.csharp-extensions",
+          "ms-dotnettools.blazor",
+          "ms-dotnettools.csharp-devkit",
+          "ms-dotnettools.csharp-interactive",
+          "ms-dotnettools.csharp-formatter"
+      ]
+    }
+  },
 "postCreateCommand": "find . -name '*.csproj' -exec dotnet restore {} +",
-    "runArgs": ["--privileged"],
-    "mounts": [
-      "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-    ],
-    "remoteEnv": {
-      "DOCKER_HOST": "unix:///var/run/docker.sock"
-    },
-      "features": {
-        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
-      },  
-    "forwardPorts": [5227]
-  }
+  "runArgs": ["--privileged"],
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ],
+  "remoteEnv": {
+    "DOCKER_HOST": "unix:///var/run/docker.sock"
+  },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },  
+  "forwardPorts": [5227]
+}
